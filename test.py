@@ -1,11 +1,6 @@
-# Create a Spark Object
-from pyspark.sql import SparkSession
+t1 = [('', 71368), ('the', 47601), ('to', 26471), ('and', 25125), ('of', 21406), ('a', 19876), ('was', 15170), ('he', 14518), ('his', 13637), ('said', 12618)]
 
-spark = SparkSession \
-    .builder \
-    .master('yarn') \
-    .appName("Python Spark SQL basic example") \
-    .getOrCreate()
+result = dict(t1)
 
-print("Spark Object id created ...")
-spark.stop()
+print(result["the"])
+
