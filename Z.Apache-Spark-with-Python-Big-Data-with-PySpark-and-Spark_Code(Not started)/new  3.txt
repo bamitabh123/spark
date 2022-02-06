@@ -1,0 +1,13 @@
+Spark Data Sources
+Section 2, Lecture 10
+Spark JDBC driver:
+
+https://docs.databricks.com/spark/latest/data-sources/sql-databases.html
+
+Spark Cassandra connector:
+
+http://www.datastax.com/dev/blog/kindling-an-introduction-to-spark-with-cassandra-part-1
+
+Spark Elasticsearch connector:
+
+https://www.elastic.co/guide/en/elasticsearch/hadoop/current/spark.html
