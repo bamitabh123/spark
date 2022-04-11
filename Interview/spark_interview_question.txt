@@ -61,7 +61,7 @@ RDD to dataframe
 how object implemeted in python
 
 spark submit parameter 
-------------------Thangavel-----
+------------------T-----
 
 diffrent file hadoop formats and when to use whic one.
 
