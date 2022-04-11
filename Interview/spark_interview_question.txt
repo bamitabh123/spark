@@ -1,0 +1,215 @@
+
+
+Main 
+
+
+multiple upsteam and doing etl and performing calc and generating report to FED
+
+
+
+
+Q27. What is pickling and unpickling?
+Ans: Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function, this process is called pickling. While the process of retrieving original Python objects from the stored string representation is called unpickling.
+
+
+Under what scenarios do you use Client and Cluster modes for deployment?
+
+-------------Vrushali ------------------
+
+
+how you submit on spark cluster? diffrenet parameter used spark submit?
+
+how are number of partition will be created?
+
+reading csv files from spark shell?what infer scema do?
+
+what are the different ways we can create dataframe ?
+
+syatax to join 2 dataframe
+
+windows function in spark 
+
+
+I don't want to use window in spark sql.which class need to be imported for using windows function . 
+
+in prod which spark deployment mode is used?
+
+#Hive
+
+which table are you using in hive?
+Why we use external table in hive.
+
+june data is available . added july data .hive partition is not visible.
+
+delete older files . will it be visible in hive.
+
+what will happen when we drop partition from  a table.
+
+when we use bucketing over partitioning and vice versa.
+
+can we have buckets in partition and vice versa.
+
+do hive support dml operations.  it works will all file format or specific file format
+
+-------------Vrushali ------------------
+
+
+-------------Thangavel----------
+
+RDD to dataframe
+
+how object implemeted in python
+
+spark submit parameter 
+------------------Thangavel-----
+
+diffrent file hadoop formats and when to use whic one.
+
+What is the difference between repartition and coalesce?
+
+DAG refer to in Apache Spark?
+
+different persistence levels in Apache Spark
+
+
+What is the use of coalesce in Spark?
+
+Why is there a need for broadcast variables when working with Apache Spark?
+
+What is the benefit of using broadcast variable in spark? syntax
+
+17. Reduce by key vs Group by key
+
+Explain the advantage of a lazy evaluation.
+
+Explain what accumulators are.
+
+msck repair vs alter table add partition 
+
+AWS
+
+Question 5. Explain Stopping, Starting, And Terminating An Amazon Ec2 Instance ?
+
+Answer :
+
+Stopping and Starting an instance: When an instance is stopped, the instance performs a normal shutdown and then transitions to a stopped state. All of its Amazon EBS volumes remain attached, and you can start the instance again at a later time. You are not charged for additional instance hours while the instance is in a stopped state.
+
+Terminating an instance: When an instance is terminated, the instance performs a normal shutdown, then the attached Amazon EBS volumes are deleted unless the volume’s deleteOnTermination attribute is set to false. The instance itself is also deleted, and you can’t start the instance again at a later time.
+
+
+Question 9. What Are Regions And Availability Zones In Amazon Ec2 ? Explain In Brief ?
+
+Answer :
+
+Amazon EC2 is hosted in multiple locations world-wide. These locations are composed of regions and Availability Zones. Each region is a separate geographic area. Each region has multiple, isolated locations known as Availability Zones.
+
+Each region is completely independent. Each Availability Zone is isolated, but the Availability Zones in a region are connected through low-latency links. The following diagram illustrates the relationship between regions and Availability Zones.
+
+
+Question 13. What Is Security Group In Amazon Ec2 ?
+
+Answer :
+
+Security groups act as a firewall for associated instances, controlling both inbound and outbound traffic at the instance level.
+
+
+Question 14. What Are The Features Of Security Group In Amazon Ec2 ?
+
+Answer :
+
+Following are the features of the Security Group in Amazon EC2:
+
+    We can add rules to a security group that enable us to connect to our instance from our IP address using SSH.
+    We can also add rules that allow inbound and outbound HTTP and HTTPS access from anywhere.
+
+Question 15. How To Create Security Group In Amazon Ec2 ?
+
+Answer :
+
+We can create Security Group in Amazon EC2 using the Amazon EC2 console. To launch instances in multiple regions, we’ll need to create a Security Group in each region.
+
+Question 24. How To Migrate An Instance To Another Availability Zone ?
+
+Answer :
+
+You can migrate your EC2 instance from one Availability Zone to another.
+
+Following are the steps to migrate an Instance to another Availability Zone:
+
+    Create an AMI from the running instance
+    Launch an instance from the AMI that you just created, specify the new Availability Zone
+    You can use the same instance type as the original instance, or select a new instance type
+    If the original instance has an associated Elastic IP address, then associate it with the new instance
+    If the original instance is a Reserved Instance, change the Availability Zone for your reservation
+
+	
+Question 37. How Is A Spot Instance Different From An On-demand Instance Or Reserved Instance ?
+
+Answer :
+
+First of all, let’s understand that Spot Instance, On-Demand instance and Reserved Instances are all models for pricing. Moving along, spot instances provide the ability for customers to purchase compute capacity with no upfront commitment, at hourly rates usually lower than the On-Demand rate in each region. Spot instances are just like bidding, the bidding price is called Spot Price.
+
+The Spot Price fluctuates based on supply and demand for instances, but customers will never pay more than the maximum price they have specified. If the Spot Price moves higher than a customer’s maximum price, the customer’s EC2 instance will be shut down automatically.
+
+But the reverse is not true, if the Spot prices come down again, your EC2 instance will not be launched automatically, one has to do that manually. In Spot and On demand instance, there is no commitment for the duration from the user side, however in reserved instances one has to stick to the time period that he has chosen.
+
+Elastic IP Addresses- Elastic IP addresses are static IP addresses designed for dynamic cloud computing. An Elastic IP address is associated with your account not a particular instance, and you control that address until you choose to explicitly release it.
+
+
+How does Elastic Load Balancer work?
+A load balancer accepts incoming traffic from clients and routes requests to its registered targets (such as EC2 instances) in one or more Availability Zones. It then resumes routing traffic to that target when it detects that the target is healthy again
+
+Define Auto-scaling?
+
+Auto-scaling is an activity that lets you dispatch advanced instances on demand. Moreover, auto-scaling helps you to increase or decrease resource capacity according to the application.
+
+
+6. What does geo-targeting in CloudFront mean?
+
+Suppose you want your business to produce and show personalized content to the audience based on their geographic location without making any changes to the URL, head straight to geo-targeting. Geo-targeting enables you to create customized content for the group of spectators of a specific geographical area, all by keeping their needs ahead.
+
+21. Can you name some AWS services that are not region-specific?
+
+    IAM
+    Route 53
+    Web application firewall
+    CloudFront
+	
+Explain Versioning in AWS S3
+
+    It’s a global feature enabled for S3 buckets. Versioning can provide us with a tracking mechanism to keep tabs on the various file changes that occur over time.
+    If we have enabled versioning for S3 buckets, there will be a unique Version ID each time a file is uploaded.
+    Even if two files are the same, if one is uploaded after some modification, both files will get a unique ID and timestamp.
+    Versioning makes it easier to revisit an older file if needed. However, different scenarios can make versioning expensive.
+	
+Q: What is AWS CloudFront?
+Ans:
+
+Amazon CloudFront is an Amazon Web Services content delivery network. Easily cached content, like web videos or other hefty files, can be accessed more quickly with content delivery networks. 
+
+Quick way to list all files in Amazon S3 bucket?
+from boto.s3.connection import S3Connection
+
+conn = S3Connection('access-key','secret-access-key')
+bucket = conn.get_bucket('bucket')
+for key in bucket.list():
+    print(key.name.encode('utf-8'))
+	
+	
+aws configure
+
+Then fill outcredantials ex:-
+
+$ aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Default region name [None]: us-west-2
+Default output format [None]: json (or just press enter)
+
+Now, See all buckets
+
+aws s3 ls
+
+Store all buckets name
+
+aws s3 ls > output.txt
