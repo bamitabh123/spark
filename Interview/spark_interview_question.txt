@@ -14,7 +14,7 @@ Ans: Pickle module accepts any Python object and converts it into a string repre
 
 Under what scenarios do you use Client and Cluster modes for deployment?
 
--------------Vrushali ------------------
+-------------V------------------
 
 
 how you submit on spark cluster? diffrenet parameter used spark submit?
@@ -51,10 +51,10 @@ can we have buckets in partition and vice versa.
 
 do hive support dml operations.  it works will all file format or specific file format
 
--------------Vrushali ------------------
+-------------V ------------------
 
 
--------------Thangavel----------
+-------------T----------
 
 RDD to dataframe
 
